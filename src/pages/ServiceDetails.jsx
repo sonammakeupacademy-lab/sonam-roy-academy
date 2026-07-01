@@ -534,7 +534,7 @@ useEffect(() => {
                       >
 
                         <span className="mt-1 text-[#b48a45]">
-                          🡆
+                          ➤
                         </span>
 
                         <p className="text-[13px] leading-5 text-[#5b5b5b]">
