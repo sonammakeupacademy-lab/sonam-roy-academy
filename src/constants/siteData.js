@@ -35,7 +35,7 @@ export const siteDescription =
 export const siteKeywords =
 "best makeup academy in gaya, makeup course in gaya, beautician course in gaya, nail extension course in gaya, hairstyling course in gaya, bridal makeup course in gaya, professional makeup artist course in gaya, HD makeup course in gaya, airbrush makeup course in gaya, beauty parlour course in gaya, beauty academy in Bihar";
 export const siteImage =
-  "https://res.cloudinary.com/dascytq6n/image/upload/f_auto,q_auto,w_1200/v1779622644/og-image_oi4xnf.webp";
+  "https://res.cloudinary.com/dascytq6n/image/upload/v1779368607/logoo_mwvcaf.webp";
 export const siteLogo =
   "https://res.cloudinary.com/dascytq6n/image/upload/f_auto,q_auto/v1779368607/logoo_mwvcaf.webp";
 export const siteAuthor = "Sonam Roy Makeup Academy";

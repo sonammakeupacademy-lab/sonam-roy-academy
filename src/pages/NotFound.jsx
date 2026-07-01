@@ -50,7 +50,7 @@ function NotFound() {
 
         <meta
           property="og:image"
-          content="https://res.cloudinary.com/dascytq6n/image/upload/v1779622644/og-image_oi4xnf.webp"
+          content="https://res.cloudinary.com/dascytq6n/image/upload/v1779368607/logoo_mwvcaf.webp"
         />
 
         {/* Twitter */}
@@ -72,7 +72,7 @@ function NotFound() {
 
         <meta
           name="twitter:image"
-          content="https://res.cloudinary.com/dascytq6n/image/upload/v1779622644/og-image_oi4xnf.webp"
+          content="https://res.cloudinary.com/dascytq6n/image/upload/v1779368607/logoo_mwvcaf.webp"
         />
       </Helmet>
 

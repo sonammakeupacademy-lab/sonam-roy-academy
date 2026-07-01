@@ -143,7 +143,7 @@ const SERVICES_CONFIG = {
 };
 
 const FALLBACK_IMAGE =
-  "https://res.cloudinary.com/dascytq6n/image/upload/q_auto,f_auto,w_1200/v1779622644/og-image_oi4xnf.webp";
+  "https://res.cloudinary.com/dascytq6n/image/upload/v1779368607/logoo_mwvcaf.webp";
 
 function ServiceDetails() {
   const { slug } = useParams();
