@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Home -->
+  <url>
+    <loc>https://www.sonamroyacademy.com/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <priority>1.0</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <!-- Gallery -->
+  <url>
+    <loc>https://www.sonamroyacademy.com/gallery</loc>
+    <lastmod>2026-06-27</lastmod>
+    <priority>0.6</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <!-- Review Generator -->
+  <url>
+    <loc>https://www.sonamroyacademy.com/write-review</loc>
+    <lastmod>2026-06-27</lastmod>
+    <priority>0.4</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <!-- Courses -->
+
+  <url>
+    <loc>https://www.sonamroyacademy.com/courses/basic-makeup-course-in-gaya</loc>
+    <lastmod>2026-06-27</lastmod>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://www.sonamroyacademy.com/courses/advance-makeup-course-in-gaya</loc>
+    <lastmod>2026-06-27</lastmod>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://www.sonamroyacademy.com/courses/airbrush-makeup-course-in-gaya</loc>
+    <lastmod>2026-06-27</lastmod>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://www.sonamroyacademy.com/courses/hairstyling-course-in-gaya</loc>
+    <lastmod>2026-06-27</lastmod>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://www.sonamroyacademy.com/courses/skin-beautician-course-in-gaya</loc>
+    <lastmod>2026-06-27</lastmod>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://www.sonamroyacademy.com/courses/nail-extension-course-in-gaya</loc>
+    <lastmod>2026-06-27</lastmod>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <!-- Makeup Services -->
+
+  <url>
+    <loc>https://www.sonamroyacademy.com/services/bridal-makeup-in-gaya</loc>
+    <lastmod>2026-06-27</lastmod>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://www.sonamroyacademy.com/services/engagement-makeup-in-gaya</loc>
+    <lastmod>2026-06-27</lastmod>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://www.sonamroyacademy.com/services/haldi-mehandi-makeup-in-gaya</loc>
+    <lastmod>2026-06-27</lastmod>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://www.sonamroyacademy.com/services/party-makeup-in-gaya</loc>
+    <lastmod>2026-06-27</lastmod>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://www.sonamroyacademy.com/services/reception-makeup-in-gaya</loc>
+    <lastmod>2026-06-27</lastmod>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://www.sonamroyacademy.com/services/photoshoot-makeup-in-gaya</loc>
+    <lastmod>2026-06-27</lastmod>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <!-- Pre Bridal Packages -->
+
+  <url>
+    <loc>https://www.sonamroyacademy.com/services/standard-pre-bridal-in-gaya</loc>
+    <lastmod>2026-06-27</lastmod>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://www.sonamroyacademy.com/services/premium-pre-bridal-in-gaya</loc>
+    <lastmod>2026-06-27</lastmod>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://www.sonamroyacademy.com/services/ultra-premium-pre-bridal-in-gaya</loc>
+    <lastmod>2026-06-27</lastmod>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+</urlset>
