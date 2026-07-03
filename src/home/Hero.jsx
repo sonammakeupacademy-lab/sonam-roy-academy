@@ -33,33 +33,9 @@ const preloadImage = (src) => {
     src: "https://res.cloudinary.com/dascytq6n/image/upload/v1779697363/skin_course_in_gaya_stzwlc.webp",
     alt: "Professional Beautician and Skin Course in Gaya",
   },
-  {
-    src: "https://res.cloudinary.com/dascytq6n/image/upload/v1779697364/beauty_course_in_gaya_z0fbzh.webp",
-    alt: "Professional Beauty Parlour Course in Gaya",
-  },
-  {
-    src: "https://res.cloudinary.com/dascytq6n/image/upload/v1779697363/beauty_servic_in_gaya_prvq4i.webp",
-    alt: "Professional Beauty Services Training in Gaya",
-  },
-  {
-    src: "https://res.cloudinary.com/dascytq6n/image/upload/v1779697363/hair_styling_course_in_gaya_bfh6ng.webp",
-    alt: "Advanced Hair Styling Classes in Gaya",
-  },
-  {
-    src: "https://res.cloudinary.com/dascytq6n/image/upload/v1779697363/Trending_Nail_Art_in_gaya_spfcpw.webp",
-    alt: "Trending Nail Art Course in Gaya",
-  },
-  {
-    src: "https://res.cloudinary.com/dascytq6n/image/upload/v1779096302/airbrush_makeup_in_gaya_r7i1bk.webp",
-    alt: "Airbrush Makeup Course in Gaya",
-  },
 ];
 
 const mobileSlides = [
-  {
-    src: "https://res.cloudinary.com/dascytq6n/image/upload/v1779113399/mobilehero3_yb0o9r.webp",
-    alt: "Best Makeup Academy in Gaya",
-  },
   {
     src: "https://res.cloudinary.com/dascytq6n/image/upload/v1779113399/mobilehero5_kx23nd.webp",
     alt: "Nail Extension Course in Gaya",
@@ -69,32 +45,16 @@ const mobileSlides = [
     alt: "Professional Makeup Course in Gaya",
   },
   {
-    src: "https://res.cloudinary.com/dascytq6n/image/upload/v1779113706/mobileher1_zgttg9.webp",
-    alt: "Hair Styling Course in Gaya",
-  },
-  {
     src: "https://res.cloudinary.com/dascytq6n/image/upload/v1779113707/mobilehero2_tgtxf2.webp",
     alt: "Beautician Course in Gaya",
-  },
-  {
-    src: "https://res.cloudinary.com/dascytq6n/image/upload/v1779115449/mobilehero10_ja2dzh.webp",
-    alt: "Beauty Parlour Course in Gaya",
   },
   {
     src: "https://res.cloudinary.com/dascytq6n/image/upload/v1779115450/mobilehero6_ujkr9f.webp",
     alt: "Professional Beauty Training in Gaya",
   },
   {
-    src: "https://res.cloudinary.com/dascytq6n/image/upload/v1779115449/mobilehero7_n6hxnj.webp",
-    alt: "Advanced Hair Styling Training in Gaya",
-  },
-  {
     src: "https://res.cloudinary.com/dascytq6n/image/upload/v1779115450/mobilehero8_qitxvy.webp",
     alt: "Trending Nail Art Training in Gaya",
-  },
-  {
-    src: "https://res.cloudinary.com/dascytq6n/image/upload/v1779115449/mobilehero9_pgavda.webp",
-    alt: "Airbrush Makeup Training in Gaya",
   },
 ];
 
@@ -233,39 +193,34 @@ if (!response.ok) {
 
         {/* Desktop Images */}
 
-{desktopSlides.map((image, index) => (
-  <CloudinaryImage
-    key={index}
-    src={image.src}
-    alt={image.alt}
-    width={1920}
-    height={1080}
-    sizes="100vw"
-    loading={index === 0 ? "eager" : "lazy"}
-    fetchPriority={index === 0 ? "high" : "auto"}
-    className={`absolute inset-0 hidden h-full w-full object-cover transition-opacity duration-700 md:block ${
-      currentSlide === index ? "opacity-100" : "opacity-0"
-    }`}
-  />
-))}
+      <CloudinaryImage
+       key={`desktop-${currentSlide}`}
+       src={desktopSlides[currentSlide].src}
+       alt={desktopSlides[currentSlide].alt}
+       width={1920}
+       height={1080}
+       sizes="100vw"
+       loading="eager"
+       fetchPriority="high"
+       decoding="sync"
+       className="absolute inset-0 hidden h-full w-full object-cover transition-opacity duration-700 md:block"
+      />
+
 
          {/* Mobile Images */}
 
-         {mobileSlides.map((image, index) => (
-           <CloudinaryImage
-           key={index}
-           src={image.src}
-           alt={image.alt}
-           width={900}
-           height={1600}
-           sizes="100vw"
-           loading={index === 0 ? "eager" : "lazy"}
-           fetchPriority={index === 0 ? "high" : "auto"}
-           className={`absolute inset-0 block h-full w-full object-cover transition-opacity duration-700 md:hidden ${
-           currentSlide === index ? "opacity-100" : "opacity-0"
-         }`}
-          />
-         ))}
+        <CloudinaryImage
+       key={`mobile-${currentSlide}`}
+       src={mobileSlides[currentSlide].src}
+       alt={mobileSlides[currentSlide].alt}
+       width={900}
+       height={1600}
+       sizes="100vw"
+       loading="eager"
+       fetchPriority="high"
+       decoding="sync"
+       className="absolute inset-0 block h-full w-full object-cover transition-opacity duration-700 md:hidden"
+    />
 
         {/* OVERLAY */}
         <div className="absolute inset-0 bg-black/60" />
@@ -276,7 +231,7 @@ if (!response.ok) {
       {/* MAIN CONTENT */}
       {/* ========================= */}
 
-      <div className="relative z-10 mx-auto flex min-h-screen max-w-7xl items-center px-5 pt-[72px] pb-6 sm:px-6 md:pt-[78px]">
+      <div className="relative z-10 mx-auto flex min-h-[100svh] max-w-7xl items-center px-5 pt-[72px] pb-6 sm:px-6 md:pt-[78px]">
 
         <div className="grid w-full items-center gap-8 lg:gap-14 lg:grid-cols-[1fr_430px]">
 

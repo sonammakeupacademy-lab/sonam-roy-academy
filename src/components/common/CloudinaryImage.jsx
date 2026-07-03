@@ -8,7 +8,7 @@ function createSrcSet(url) {
       (w) =>
         `${url.replace(
           "/upload/",
-          `/upload/f_auto,q_auto,dpr_auto,w_${w}/`
+          `/upload/f_auto,q_auto:good,c_fill,g_auto,dpr_auto,w_${w}/`
         )} ${w}w`
     )
     .join(", ");
@@ -36,9 +36,9 @@ function CloudinaryImage({
       height={height}
       loading={loading}
       decoding={decoding}
+      fetchpriority={fetchPriority}
       className={className}
       {...props}
-      {...{ fetchpriority: fetchPriority }}
     />
   );
 }
