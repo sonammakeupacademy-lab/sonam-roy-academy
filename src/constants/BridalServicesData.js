@@ -4,7 +4,7 @@ export const bridalServices = [
     title: "Bridal Makeup",
 
     image:
-      "https://res.cloudinary.com/dascytq6n/image/upload/q_auto/f_auto/v1779693759/bridal_makeup_in_gaya_q1tmy1.webp",
+      "https://res.cloudinary.com/dascytq6n/image/upload/v1779693759/bridal_makeup_in_gaya_q1tmy1.webp",
 
     imageAlt:
       "Professional Bridal Makeup in Gaya by Sonam Roy Makeup Academy",
@@ -28,7 +28,7 @@ export const bridalServices = [
     title: "HD Bridal Makeup",
 
     image:
-      "https://res.cloudinary.com/dascytq6n/image/upload/q_auto/f_auto/v1779693758/HD_bridal_makeup_in_gaya_bm5blb.webp",
+      "https://res.cloudinary.com/dascytq6n/image/upload/v1779693758/HD_bridal_makeup_in_gaya_bm5blb.webp",
 
     imageAlt:
       "HD Bridal Makeup in Gaya by Sonam Roy Makeup Academy",
@@ -52,7 +52,7 @@ export const bridalServices = [
     title: "Ultra HD Bridal Makeup",
 
     image:
-      "https://res.cloudinary.com/dascytq6n/image/upload/q_auto/f_auto/v1779693759/ultra_hd_bridal_makeup_in_gaya_crl5jp.webp",
+      "https://res.cloudinary.com/dascytq6n/image/upload/v1779693759/ultra_hd_bridal_makeup_in_gaya_crl5jp.webp",
 
     imageAlt:
      "Ultra HD Bridal Makeup in Gaya by Sonam Roy Makeup Academy",
@@ -77,7 +77,7 @@ export const bridalServices = [
     title: "Airbrush Bridal Makeup",
 
     image:
-      "https://res.cloudinary.com/dascytq6n/image/upload/q_auto/f_auto/v1779693758/airbrush_bridal_makeup_in_gaya_v4c1pg.webp",
+      "https://res.cloudinary.com/dascytq6n/image/upload/v1779693758/airbrush_bridal_makeup_in_gaya_v4c1pg.webp",
 
     imageAlt:
       "Airbrush Bridal Makeup in Gaya by Sonam Roy Makeup Academy",
@@ -102,7 +102,7 @@ export const bridalServices = [
     title: "Ultra HD Airbrush Bridal Makeup",
 
     image:
-      "https://res.cloudinary.com/dascytq6n/image/upload/q_auto/f_auto/v1779783378/Ultra_HD_Airbrush_Bridal_Makeup_in_gaya_hqiu7w.webp",
+      "https://res.cloudinary.com/dascytq6n/image/upload/v1779783378/Ultra_HD_Airbrush_Bridal_Makeup_in_gaya_hqiu7w.webp",
 
     imageAlt:
      "Ultra HD Airbrush Bridal Makeup in Gaya by Sonam Roy Makeup Academy",

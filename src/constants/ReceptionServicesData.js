@@ -4,7 +4,7 @@ export const receptionServices = [
     title: "Reception Makeup",
 
     image:
-      "https://res.cloudinary.com/dascytq6n/image/upload/q_auto/f_auto/v1779783378/Reception_Makeup_in_gaya_sdom7x.webp",
+      "https://res.cloudinary.com/dascytq6n/image/upload/v1779783378/Reception_Makeup_in_gaya_sdom7x.webp",
 
     imageAlt:
       "Professional Reception Makeup in Gaya by Sonam Roy Makeup Academy",
@@ -29,7 +29,7 @@ export const receptionServices = [
     title: "HD Reception Makeup",
 
     image:
-      "https://res.cloudinary.com/dascytq6n/image/upload/q_auto/f_auto/v1779783377/HD_Reception_Makeup_in_gaya_i6utar.webp",
+      "https://res.cloudinary.com/dascytq6n/image/upload/v1779783377/HD_Reception_Makeup_in_gaya_i6utar.webp",
 
     imageAlt:
       "HD Reception Makeup in Gaya with flawless finish by Sonam Roy Makeup Academy",
@@ -54,7 +54,7 @@ export const receptionServices = [
     title: "Ultra HD Reception Makeup",
 
     image:
-      "https://res.cloudinary.com/dascytq6n/image/upload/q_auto/f_auto/v1779783378/Ultra_HD_Reception_Makeup_in_gaya_jm0l0v.webp",
+      "https://res.cloudinary.com/dascytq6n/image/upload/v1779783378/Ultra_HD_Reception_Makeup_in_gaya_jm0l0v.webp",
 
     imageAlt:
       "Ultra HD Reception Makeup in Gaya with luxury bridal finish by Sonam Roy Makeup Academy",
@@ -79,7 +79,7 @@ export const receptionServices = [
     title: "Airbrush Reception Makeup",
 
     image:
-      "https://res.cloudinary.com/dascytq6n/image/upload/q_auto/f_auto/v1779783377/Airbrush_Reception_Makeup_in_gaya_najaij.webp",
+      "https://res.cloudinary.com/dascytq6n/image/upload/v1779783377/Airbrush_Reception_Makeup_in_gaya_najaij.webp",
 
     imageAlt:
       "Airbrush Reception Makeup in Gaya with waterproof finish by Sonam Roy Makeup Academy",
@@ -104,7 +104,7 @@ export const receptionServices = [
     title: "Ultra HD Airbrush Reception Makeup",
 
     image:
-      "https://res.cloudinary.com/dascytq6n/image/upload/q_auto/f_auto/v1779783377/Ultra_HD_Airbrush_Reception_Makeup_in_gaya_agrgcg.webp",
+      "https://res.cloudinary.com/dascytq6n/image/upload/v1779783377/Ultra_HD_Airbrush_Reception_Makeup_in_gaya_agrgcg.webp",
 
     imageAlt:
       "Ultra HD Airbrush Reception Makeup in Gaya by Sonam Roy Makeup Academy",

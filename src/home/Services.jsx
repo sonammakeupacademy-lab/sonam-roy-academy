@@ -1,5 +1,6 @@
 import { memo } from "react";
 import { Link } from "react-router-dom";
+import CloudinaryImage from "../components/common/CloudinaryImage";
 import { businessPhoneLink } from "../constants/siteData";
 
 const services = [
@@ -7,7 +8,7 @@ const services = [
     slug: "bridal-makeup-in-gaya",
     title: "Bridal Makeup",
     image:
-      "https://res.cloudinary.com/dascytq6n/image/upload/q_auto,f_auto,w_700/v1779371533/best_bridal_makeup_in_gaya_fphhv1.webp",
+      "https://res.cloudinary.com/dascytq6n/image/upload/v1779371533/best_bridal_makeup_in_gaya_fphhv1.webp",
     imageAlt:
       "Professional Bridal Makeup Services in Gaya at Sonam Roy Makeup Academy",
     price: "Starting from ₹15,000",
@@ -19,7 +20,7 @@ const services = [
     slug: "engagement-makeup-in-gaya",
     title: "Engagement Makeup",
     image:
-      "https://res.cloudinary.com/dascytq6n/image/upload/q_auto,f_auto,w_700/v1779371959/best_makeup_artist_in_gaya_d3le9p.webp",
+      "https://res.cloudinary.com/dascytq6n/image/upload/v1779371959/best_makeup_artist_in_gaya_d3le9p.webp",
     imageAlt:
       "Professional Engagement Makeup Services in Gaya",
     price: "Starting from ₹6,000",
@@ -31,7 +32,7 @@ const services = [
     slug: "haldi-mehandi-makeup-in-gaya",
     title: "Haldi Mehendi Makeup",
     image:
-      "https://res.cloudinary.com/dascytq6n/image/upload/q_auto,f_auto,w_700/v1779372469/best_haldi_makeup_in_gaya_enjcwi.webp",
+      "https://res.cloudinary.com/dascytq6n/image/upload/v1779372469/best_haldi_makeup_in_gaya_enjcwi.webp",
     imageAlt:
       "Haldi Mehendi Makeup Services in Gaya",
     price: "Starting from ₹8,000",
@@ -42,7 +43,7 @@ const services = [
     slug: "party-makeup-in-gaya",
     title: "Party Makeup",
     image:
-      "https://res.cloudinary.com/dascytq6n/image/upload/q_auto/f_auto/v1780211707/party_makeup_in_gaya_bw595q.webp",
+      "https://res.cloudinary.com/dascytq6n/image/upload/v1780211707/party_makeup_in_gaya_bw595q.webp",
     imageAlt:
       "Professional Party Makeup Services in Gaya",
     price: "Starting from ₹4,000",
@@ -54,7 +55,7 @@ const services = [
     slug: "photoshoot-makeup-in-gaya",
     title: "Photoshoot Makeup",
     image:
-      "https://res.cloudinary.com/dascytq6n/image/upload/q_auto/f_auto/v1780211707/photoshoot_near_me_cxhaap.webp",
+      "https://res.cloudinary.com/dascytq6n/image/upload/v1780211707/photoshoot_near_me_cxhaap.webp",
     imageAlt:
       "Professional Photoshoot Makeup Services in Gaya",
     price: "Starting from ₹10,000",
@@ -66,7 +67,7 @@ const services = [
     slug: "reception-makeup-in-gaya",
     title: "Reception Makeup",
     image:
-      "https://res.cloudinary.com/dascytq6n/image/upload/q_auto/f_auto/v1780211708/Reception_Makeup_in_gaya_lluxjv.webp",
+      "https://res.cloudinary.com/dascytq6n/image/upload/v1780211708/Reception_Makeup_in_gaya_lluxjv.webp",
     imageAlt:
       "Professional Reception Makeup Services in Gaya",
     price: "Starting from ₹6,000",
@@ -78,7 +79,7 @@ const services = [
     slug: "standard-pre-bridal-in-gaya",
     title: "Standard Pre-Bridal Package",
     image:
-      "https://res.cloudinary.com/dascytq6n/image/upload/q_auto/f_auto/v1780302907/pre_bridal_makeup_in_gaya_rppma4.webp",
+      "https://res.cloudinary.com/dascytq6n/image/upload/v1780302907/pre_bridal_makeup_in_gaya_rppma4.webp",
     imageAlt:
       "Standard Pre Bridal Package in Gaya at Sonam Roy Makeup Academy",
     price: "₹8,999",
@@ -90,7 +91,7 @@ const services = [
     slug: "premium-pre-bridal-in-gaya",
     title: "Premium Pre-Bridal Package",
     image:
-      "https://res.cloudinary.com/dascytq6n/image/upload/q_auto/f_auto/v1780302907/pre_bridal_makeup_gaya_toibx6.webp",
+      "https://res.cloudinary.com/dascytq6n/image/upload/v1780302907/pre_bridal_makeup_gaya_toibx6.webp",
     imageAlt:
       "Premium Pre Bridal Package in Gaya at Sonam Roy Makeup Academy",
     price: "₹11,999",
@@ -102,7 +103,7 @@ const services = [
     slug: "ultra-premium-pre-bridal-in-gaya",
     title: "Ultra Premium Pre-Bridal Package",
     image:
-      "https://res.cloudinary.com/dascytq6n/image/upload/q_auto/f_auto/v1780302907/pre_bridal_makeup_near_me_zjyiau.webp",
+      "https://res.cloudinary.com/dascytq6n/image/upload/v1780302907/pre_bridal_makeup_near_me_zjyiau.webp",
     imageAlt:
      "Ultra Premium Pre Bridal Package in Gaya at Sonam Roy Makeup Academy",
     price: "₹16,999",
@@ -123,13 +124,13 @@ function Services() {
         {/* Heading */}
 
         <div className="mb-8 text-center">
-        <p className="text-lg font-bold uppercase tracking-[0.18em] text-[#b48a45] sm:text-2xl md:text-3xl">
-        Our Professional Makeup Services
-        </p>
-
-        <h2 className="mt-3 text-xl font-bold text-[#111827] sm:text-2xl">
-         Bridal, Party & Pre-Bridal Services in Gaya
+        <h2 className="text-lg font-bold uppercase tracking-[0.18em] text-[#b48a45] sm:text-2xl md:text-3xl">
+         Our Professional Makeup Services
         </h2>
+
+        <p className="mt-3 text-xl font-bold text-[#111827] sm:text-2xl">
+         Bridal, Party & Pre-Bridal Services in Gaya
+        </p>
 
         <p className="mx-auto mt-3 max-w-2xl text-sm leading-relaxed text-gray-600 sm:text-base">
          Professional bridal makeup, engagement makeup, party makeup,
@@ -152,16 +153,16 @@ function Services() {
 
               <div className="h-48 overflow-hidden sm:h-56 md:h-64">
 
-              <img
-             src={service.image}
-             alt={service.imageAlt}
-             title={service.title}
-             width="700"
-             height="525"
-             loading={index === 0 ? "eager" : "lazy"}
-             decoding="async"
-             sizes="(max-width:768px) 100vw, (max-width:1280px) 50vw, 33vw"
-             className="h-full w-full object-cover object-top transition duration-500 group-hover:scale-105"
+              <CloudinaryImage
+              src={service.image}
+              alt={service.imageAlt}
+              width={700}
+              height={525}
+              maxWidth={700}
+              loading={index === 0 ? "eager" : "lazy"}
+              decoding="async"
+              sizes="(max-width:768px) 100vw, (max-width:1280px) 50vw, 33vw"
+              className="h-full w-full object-cover object-top transition duration-500 group-hover:scale-105"
             />
 
             </div>
@@ -205,7 +206,7 @@ function Services() {
                   aria-label={`Book ${service.title}`}
                   className="flex-1 rounded-full bg-[#b48a45] py-2.5 text-center text-[13px] font-semibold text-white transition hover:opacity-90"
                 >
-                  Book Now
+                  Call Now
                  </a>
 
                 </div>

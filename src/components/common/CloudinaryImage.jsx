@@ -1,17 +1,38 @@
 import React from "react";
 
-const widths = [320, 480, 768, 1024, 1280, 1600, 1920];
+function getWidths(maxWidth = 1920) {
+  const allWidths = [
+    240,
+    320,
+    480,
+    640,
+    768,
+    960,
+    1200,
+    1600,
+    1920,
+  ];
 
-function createSrcSet(url) {
-  return widths
+  return allWidths.filter((w) => w <= maxWidth);
+}
+
+function createSrcSet(url, maxWidth) {
+  return getWidths(maxWidth)
     .map(
       (w) =>
         `${url.replace(
           "/upload/",
-          `/upload/f_auto,q_auto:good,c_fill,g_auto,dpr_auto,w_${w}/`
+          `/upload/f_auto,q_auto,c_fill,g_auto,dpr_auto,w_${w}/`
         )} ${w}w`
     )
     .join(", ");
+}
+
+function createSrc(url, maxWidth) {
+  return url.replace(
+    "/upload/",
+    `/upload/f_auto,q_auto,c_fill,g_auto,dpr_auto,w_${maxWidth}/`
+  );
 }
 
 function CloudinaryImage({
@@ -24,12 +45,16 @@ function CloudinaryImage({
   loading = "lazy",
   fetchPriority = "auto",
   decoding = "async",
+
+  // NEW PROP
+  maxWidth = 1920,
+
   ...props
 }) {
   return (
     <img
-      src={src}
-      srcSet={createSrcSet(src)}
+      src={createSrc(src, maxWidth)}
+      srcSet={createSrcSet(src, maxWidth)}
       sizes={sizes}
       alt={alt}
       width={width}

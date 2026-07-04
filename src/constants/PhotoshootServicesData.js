@@ -4,7 +4,7 @@ export const photoshootServices = [
     title: "Baby Shower Makeup",
 
     image:
-      "https://res.cloudinary.com/dascytq6n/image/upload/q_auto/f_auto/v1779784439/Baby_Shower_Makeup_in_gaya_ewvwjz.webp",
+      "https://res.cloudinary.com/dascytq6n/image/upload/v1779784439/Baby_Shower_Makeup_in_gaya_ewvwjz.webp",
 
     imageAlt:
       "Professional Baby Shower Makeup in Gaya by Sonam Roy Makeup Academy",
@@ -29,7 +29,7 @@ export const photoshootServices = [
     title: "Photoshoot Makeup",
 
     image:
-      "https://res.cloudinary.com/dascytq6n/image/upload/q_auto/f_auto/v1779784439/Photoshoot_Makeup_in_gaya_moalax.webp",
+      "https://res.cloudinary.com/dascytq6n/image/upload/v1779784439/Photoshoot_Makeup_in_gaya_moalax.webp",
 
     imageAlt:
       "Professional Photoshoot Makeup in Gaya with HD camera-ready finish by Sonam Roy Makeup Academy",
@@ -54,7 +54,7 @@ export const photoshootServices = [
     title: "Pre-Wedding Shoot Makeup",
 
     image:
-      "https://res.cloudinary.com/dascytq6n/image/upload/q_auto/f_auto/v1780212582/best_makeup_academy_in_gaya_urjsxj.webp",
+      "https://res.cloudinary.com/dascytq6n/image/upload/v1780212582/best_makeup_academy_in_gaya_urjsxj.webp",
 
     imageAlt:
       "Professional Pre-Wedding Shoot Makeup in Gaya by Sonam Roy Makeup Academy",

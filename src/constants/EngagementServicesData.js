@@ -4,7 +4,7 @@ export const engagementServices = [
     title: "Engagement Makeup",
 
     image:
-      "https://res.cloudinary.com/dascytq6n/image/upload/q_auto/f_auto/v1779376073/Engagement_Makeup_in_Gaya_h17mip.webp",
+      "https://res.cloudinary.com/dascytq6n/image/upload/Engagement_Makeup_in_Gaya_h17mip.webp",
 
     imageAlt:
       "Professional Engagement Makeup in Gaya by Sonam Roy Makeup Academy",
@@ -29,7 +29,7 @@ export const engagementServices = [
     title: "HD Engagement Makeup",
 
     image:
-      "https://res.cloudinary.com/dascytq6n/image/upload/q_auto/f_auto/v1779376073/HD_Engagement_Makeup_in_Gaya_sacnnd.webp",
+      "https://res.cloudinary.com/dascytq6n/image/upload/v1779376073/HD_Engagement_Makeup_in_Gaya_sacnnd.webp",
 
     imageAlt:
        "HD Engagement Makeup in Gaya by Sonam Roy Makeup Academy",
@@ -54,7 +54,7 @@ export const engagementServices = [
     title: "Ultra HD Engagement Makeup",
 
     image:
-      "https://res.cloudinary.com/dascytq6n/image/upload/q_auto/f_auto/v1779376073/Ultra_HD_Engagement_Makeup_in_Gaya_kd9bjw.webp",
+      "https://res.cloudinary.com/dascytq6n/image/upload/v1779376073/Ultra_HD_Engagement_Makeup_in_Gaya_kd9bjw.webp",
 
     imageAlt:
       "Ultra HD Engagement Makeup in Gaya by Sonam Roy Makeup Academy",
@@ -79,7 +79,7 @@ export const engagementServices = [
     title: "Airbrush Engagement Makeup",
 
     image:
-      "https://res.cloudinary.com/dascytq6n/image/upload/q_auto/f_auto/v1779693758/Airbrush_Engagement_Makeup_in_gaya_sk16fg.webp",
+      "https://res.cloudinary.com/dascytq6n/image/upload/v1779693758/Airbrush_Engagement_Makeup_in_gaya_sk16fg.webp",
 
     imageAlt:
       "Airbrush Engagement Makeup in Gaya by Sonam Roy Makeup Academy",
@@ -104,7 +104,7 @@ export const engagementServices = [
     title: "Ultra HD Airbrush Engagement Makeup",
 
     image:
-      "https://res.cloudinary.com/dascytq6n/image/upload/q_auto/f_auto/v1779693758/Ultra_HD_Airbrush_Engagement_Makeup_in_gaya_zgxtw7.webp",
+      "https://res.cloudinary.com/dascytq6n/image/upload/v1779693758/Ultra_HD_Airbrush_Engagement_Makeup_in_gaya_zgxtw7.webp",
 
     imageAlt:
       "Ultra HD Airbrush Engagement Makeup in Gaya by Sonam Roy Makeup Academy",

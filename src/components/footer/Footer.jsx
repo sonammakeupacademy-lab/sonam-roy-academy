@@ -20,7 +20,7 @@ import {
 
 function Footer() {
   return (
-    <footer className="border-t border-[#f1e2c8] bg-[#fffdf9] px-4 py-10 sm:px-6 sm:py-12">
+    <footer className="border-t border-[#f1e2c8] bg-[#fffdf9] px-4 py-10 sm:px-6 sm:py-12 [content-visibility:auto] [contain-intrinsic-size:500px]">
 
       <div className="mx-auto grid max-w-7xl gap-8 md:grid-cols-3 md:gap-10">
 

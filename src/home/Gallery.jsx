@@ -5,19 +5,19 @@ import CloudinaryImage from "../components/common/CloudinaryImage";
 
 const galleryImages = [
   {
-    src: "https://res.cloudinary.com/dascytq6n/image/upload/w_800,c_fill,ar_4:5,g_auto,q_auto:good,f_auto,dpr_auto/v1779037650/best_makeup_artist_in_gaya_mswjyh.webp",
+    src: "https://res.cloudinary.com/dascytq6n/image/upload/v1779037650/best_makeup_artist_in_gaya_mswjyh.webp",
     alt: "Professional Bridal Makeup Training at Sonam Roy Makeup Academy in Gaya",
   },
   {
-    src: "https://res.cloudinary.com/dascytq6n/image/upload/w_800,c_fill,ar_4:5,g_auto,q_auto:good,f_auto,dpr_auto/v1779037651/best_beauty_course_in_gaya_pfq1v8.webp",
+    src: "https://res.cloudinary.com/dascytq6n/image/upload/v1779037651/best_beauty_course_in_gaya_pfq1v8.webp",
     alt: "Professional Beauty Parlour Course Practical Session in Gaya",
   },
   {
-    src: "https://res.cloudinary.com/dascytq6n/image/upload/w_800,c_fill,ar_4:5,g_auto,q_auto:good,f_auto,dpr_auto/v1779037650/best_academy_in_gaya_ruwj0d.webp",
+    src: "https://res.cloudinary.com/dascytq6n/image/upload/v1779037650/best_academy_in_gaya_ruwj0d.webp",
     alt: "Students Learning Professional Makeup at Sonam Roy Makeup Academy",
   },
   {
-    src: "https://res.cloudinary.com/dascytq6n/image/upload/w_800,c_fill,ar_4:5,g_auto,q_auto:good,f_auto,dpr_auto/v1779037943/makeup_class_in_gaya_zaxyle.webp",
+    src: "https://res.cloudinary.com/dascytq6n/image/upload/v1779037943/makeup_class_in_gaya_zaxyle.webp",
     alt: "Hands-on Makeup Class Training at Sonam Roy Makeup Academy in Gaya",
   },
 ];
@@ -61,14 +61,16 @@ function Gallery() {
               {/* Image */}
 
               <CloudinaryImage
-               src={image.src}
-               alt={image.alt}
-               width={800}
-               height={1000}
-               sizes="(max-width:768px) 50vw, (max-width:1024px) 33vw, 25vw"
-               loading={index === 0 ? "eager" : "lazy"}
-               className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
-              />
+              src={image.src}
+              alt={image.alt}
+              width={800}
+              height={1000}
+              maxWidth={400}
+              sizes="(max-width:768px) 50vw, (max-width:1024px) 33vw, 25vw"
+              loading="lazy"
+              decoding="async"
+              className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+           />
 
             </article>
 

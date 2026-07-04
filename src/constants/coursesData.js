@@ -30,16 +30,16 @@ export const courses = [
     "The Basic Make-Up Course at Sonam Roy Makeup Academy in Gaya is designed for beginners who want to start a successful career in the beauty and makeup industry. This professional makeup training course covers essential makeup fundamentals including skin preparation, face analysis, foundation matching, contouring, highlighting, concealing, blush application, lipstick techniques, eyebrow shaping, eye makeup blending, eyeliner styles, and trendy party makeup looks. Students receive hands-on practical training on different skin tones, face shapes, makeup tools, product selection, hygiene standards, and professional client handling techniques. The course focuses on intensive practice sessions to build confidence and provide real salon experience. This beginner-friendly makeup artist course is ideal for students, homemakers, salon professionals, freelancers, and beauty enthusiasts who want to develop professional makeup skills and begin their journey in the beauty and makeup industry successfully.",
 
   image:
-    "https://res.cloudinary.com/dascytq6n/image/upload/c_fill,w_1000,q_auto:best,f_auto/v1779043592/basic_makeup_course_in_gaya_l32yed.webp",
+    "https://res.cloudinary.com/dascytq6n/image/upload/v1779043592/basic_makeup_course_in_gaya_l32yed.webp",
 
   secondImage:
-    "https://res.cloudinary.com/dascytq6n/image/upload/c_fill,w_1000,q_auto:best,f_auto/v1779090910/basic_makeup_course_czl2dd.webp",
+    "https://res.cloudinary.com/dascytq6n/image/upload/v1779090910/basic_makeup_course_czl2dd.webp",
 
   thirdImage:
-    "https://res.cloudinary.com/dascytq6n/image/upload/c_fill,w_1000,q_auto:best,f_auto/v1779090910/basic_makeup_course_in_gaya_nugsuy.webp",
+    "https://res.cloudinary.com/dascytq6n/image/upload/v1779090910/basic_makeup_course_in_gaya_nugsuy.webp",
 
   thumbnail:
-    "https://res.cloudinary.com/dascytq6n/image/upload/c_fill,w_600,q_auto:best,f_auto/v1779043592/basic_makeup_course_in_gaya_l32yed.webp",
+    "https://res.cloudinary.com/dascytq6n/image/upload/v1779043592/basic_makeup_course_in_gaya_l32yed.webp",
 
   mainImageAlt:
    "Basic makeup course training in Gaya at Sonam Roy Makeup Academy",
@@ -162,16 +162,16 @@ export const courses = [
     "The Advance Make-Up Course at Sonam Roy Makeup Academy in Gaya is designed for aspiring makeup artists who want to build a successful career in the beauty industry. This professional training course covers HD bridal makeup, engagement makeup, reception looks, party glam makeup, smokey eyes, cut crease eye makeup, contouring, highlighting, color correction, and long-lasting makeup techniques. Students receive practical training on different skin tones, face shapes, tools, product selection, hygiene standards, and professional client handling. Special focus is given to modern bridal trends, luxury makeup styles, and portfolio development. The course also includes live demo sessions, real client practice, and photoshoot guidance. After successful completion, students can work as makeup artists, salon professionals, freelancers, beauty trainers, or start their own professional makeup studio and beauty business.",
 
   image:
-    "https://res.cloudinary.com/dascytq6n/image/upload/c_fill,w_1000,q_auto:best,f_auto/v1779043592/advance_makeup_course_in_gaya_wpmaxf.webp",
+    "https://res.cloudinary.com/dascytq6n/image/upload/v1779043592/advance_makeup_course_in_gaya_wpmaxf.webp",
 
   secondImage:
-    "https://res.cloudinary.com/dascytq6n/image/upload/c_fill,w_1000,q_auto:best,f_auto/v1779090910/advanced_makeup_course_in_gaya_tmundw.webp",
+    "https://res.cloudinary.com/dascytq6n/image/upload/v1779090910/advanced_makeup_course_in_gaya_tmundw.webp",
 
   thirdImage:
-    "https://res.cloudinary.com/dascytq6n/image/upload/c_fill,w_1000,q_auto:best,f_auto/v1779090910/advance_makeup_course_x006bs.webp",
+    "https://res.cloudinary.com/dascytq6n/image/upload/v1779090910/advance_makeup_course_x006bs.webp",
     
   thumbnail:
-    "https://res.cloudinary.com/dascytq6n/image/upload/c_fill,w_600,q_auto:best,f_auto/v1779043592/advance_makeup_course_in_gaya_wpmaxf.webp",
+    "https://res.cloudinary.com/dascytq6n/image/upload/v1779043592/advance_makeup_course_in_gaya_wpmaxf.webp",
 
   mainImageAlt:
    "Advanced makeup course in Gaya with bridal HD makeup training",
@@ -299,16 +299,16 @@ export const courses = [
     "The Airbrush Make-Up Course at Sonam Roy Makeup Academy in Gaya is designed for students and makeup artists who want to master flawless and long-lasting airbrush makeup techniques. This professional beauty training course covers bridal airbrush makeup, HD finishing, skin preparation, color correction, machine handling, foundation layering, and luxury makeup application methods. Students receive hands-on practical training using professional airbrush machines and industry-standard products to create smooth, camera-ready makeup looks. The course also includes bridal makeup, engagement makeup, reception looks, party glam makeup, hygiene standards, client consultation, skin analysis, and advanced blending techniques. This airbrush makeup training program is ideal for aspiring bridal makeup artists, salon professionals, freelancers, and beauty enthusiasts who want to develop professional skills and build a successful career in the beauty and makeup industry.",
 
   image:
-    "https://res.cloudinary.com/dascytq6n/image/upload/c_fill,w_1000,q_auto:best,f_auto/v1779043592/airbrush_makeup_course_in_gaya_onrqub.webp",
+    "https://res.cloudinary.com/dascytq6n/image/upload/v1779043592/airbrush_makeup_course_in_gaya_onrqub.webp",
 
   secondImage:
-    "https://res.cloudinary.com/dascytq6n/image/upload/c_fill,w_1000,q_auto:best,f_auto/v1779096302/airbrush_makeup_in_gaya_r7i1bk.webp",
+    "https://res.cloudinary.com/dascytq6n/image/upload/v1779096302/airbrush_makeup_in_gaya_r7i1bk.webp",
 
   thirdImage:
-    "https://res.cloudinary.com/dascytq6n/image/upload/c_fill,w_1000,q_auto:best,f_auto/v1779096302/airbrush_makeup_course_in_gaya_rpvlsu.webp",
+    "https://res.cloudinary.com/dascytq6n/image/upload/v1779096302/airbrush_makeup_course_in_gaya_rpvlsu.webp",
 
   thumbnail:
-    "https://res.cloudinary.com/dascytq6n/image/upload/c_fill,w_600,q_auto:best,f_auto/v1779043592/airbrush_makeup_course_in_gaya_onrqub.webp",
+    "https://res.cloudinary.com/dascytq6n/image/upload/v1779043592/airbrush_makeup_course_in_gaya_onrqub.webp",
 
   mainImageAlt:
    "Professional airbrush makeup course in Gaya with bridal HD makeup training",
@@ -431,16 +431,16 @@ export const courses = [
     "The Professional Hairstyling Course at Sonam Roy Makeup Academy in Gaya is designed for students who want to build a successful career in the beauty and hairstyling industry. This professional training course covers bridal hairstyling, party hairstyles, salon hair styling, curls, waves, braids, buns, hair setting, volume creation, and professional finishing techniques. Students receive hands-on practical training on hairstyles for bridal makeup, engagement functions, receptions, fashion shoots, and party events. The course includes live practical sessions, real model practice, hair tool handling, hair sectioning techniques, hair accessories placement, hygiene standards, and client consultation guidance. Students learn to create elegant and long-lasting hairstyles for different hair types and face shapes. This hairstyling course is ideal for beginners, makeup artists, salon professionals, freelancers, and beauty enthusiasts who want to develop professional hairstyling skills and grow their career successfully.",
 
   image:
-    "https://res.cloudinary.com/dascytq6n/image/upload/c_fill,w_1000,q_auto:best,f_auto/v1779085669/best_hairstyling_course_in_gaya_xesi9v.webp",
+    "https://res.cloudinary.com/dascytq6n/image/upload/v1779085669/best_hairstyling_course_in_gaya_xesi9v.webp",
 
   secondImage:
-    "https://res.cloudinary.com/dascytq6n/image/upload/c_fill,w_1000,q_auto:best,f_auto/v1779096302/hair_styling_course_in_gaya_azwgtj.webp",
+    "https://res.cloudinary.com/dascytq6n/image/upload/v1779096302/hair_styling_course_in_gaya_azwgtj.webp",
 
   thirdImage:
-    "https://res.cloudinary.com/dascytq6n/image/upload/c_fill,w_1000,q_auto:best,f_auto/v1779096302/hair_course_in_gaya_qdl9db.webp",
+    "https://res.cloudinary.com/dascytq6n/image/upload/v1779096302/hair_course_in_gaya_qdl9db.webp",
 
   thumbnail:
-    "https://res.cloudinary.com/dascytq6n/image/upload/c_fill,w_600,q_auto:best,f_auto/v1779085669/best_hairstyling_course_in_gaya_xesi9v.webp",
+    "https://res.cloudinary.com/dascytq6n/image/upload/v1779085669/best_hairstyling_course_in_gaya_xesi9v.webp",
 
   mainImageAlt:
    "Professional hairstyling course in Gaya with bridal hairstyle training",
@@ -565,16 +565,16 @@ export const courses = [
     "The Professional Skin Beautician Course at Sonam Roy Makeup Academy in Gaya is designed for students who want to build a successful career in the beauty and skincare industry. This professional beautician training course covers skin analysis, facial treatments, cleanup procedures, detan therapy, waxing, threading, bleaching, manicure, pedicure, and salon hygiene standards. Students receive hands-on practical training on different skin types, skincare products, client consultation, and safe beauty treatment techniques used in salons. The course includes live demonstrations, real client practice sessions, product knowledge, salon management basics, and customer handling techniques to help students gain confidence and professional experience. Students are trained using salon tools and industry-standard beauty procedures. This beautician course is ideal for beginners, aspiring beauticians, salon professionals, and beauty enthusiasts who want to start a successful career in salons, freelancing, or the beauty industry.",
 
   image:
-    "https://res.cloudinary.com/dascytq6n/image/upload/c_fill,w_1000,q_auto:best,f_auto/v1779043592/beautician_course_in_gaya_uqjmip.webp",
+    "https://res.cloudinary.com/dascytq6n/image/upload/v1779043592/beautician_course_in_gaya_uqjmip.webp",
 
   secondImage:
-    "https://res.cloudinary.com/dascytq6n/image/upload/c_fill,w_1000,q_auto:best,f_auto/v1779096301/facial_course_in_gaya_haznh0.webp",
+    "https://res.cloudinary.com/dascytq6n/image/upload/v1779096301/facial_course_in_gaya_haznh0.webp",
 
   thirdImage:
-    "https://res.cloudinary.com/dascytq6n/image/upload/c_fill,w_1000,q_auto:best,f_auto/v1779096302/beautician_course_in_gaya_icphua.webp",
+    "https://res.cloudinary.com/dascytq6n/image/upload/v1779096302/beautician_course_in_gaya_icphua.webp",
 
   thumbnail:
-    "https://res.cloudinary.com/dascytq6n/image/upload/c_fill,w_600,q_auto:best,f_auto/v1779043592/beautician_course_in_gaya_uqjmip.webp",
+    "https://res.cloudinary.com/dascytq6n/image/upload/v1779043592/beautician_course_in_gaya_uqjmip.webp",
 
   mainImageAlt:
    "Professional skin beautician course in Gaya with facial and skincare training",
@@ -697,16 +697,16 @@ export const courses = [
     "The Professional Nail Extension Course at Sonam Roy Makeup Academy in Gaya is designed for students who want to build a successful career in the nail beauty and salon industry. This professional training course covers gel nail extensions, acrylic nail extensions, nail art designing, manicure, nail shaping, nail finishing, cuticle care, polish application, and modern nail styling techniques. Students receive hands-on practical training on different nail extension methods used in salons, beauty studios, bridal services, and fashion styling industries. The course includes live practical sessions, real model practice, nail hygiene standards, client consultation, product knowledge, refill techniques, and professional finishing methods. Students learn to create stylish and durable nail looks using modern tools and trending nail art techniques. This course is ideal for beginners, aspiring nail artists, salon professionals, beauticians, and beauty enthusiasts who want to become professional nail technicians successfully.",
 
   image:
-    "https://res.cloudinary.com/dascytq6n/image/upload/c_fill,w_1000,q_auto:best,f_auto/v1779043592/nail_art_course_in_gaya_fenoyk.webp",
+    "https://res.cloudinary.com/dascytq6n/image/upload/v1779043592/nail_art_course_in_gaya_fenoyk.webp",
 
   secondImage:
-    "https://res.cloudinary.com/dascytq6n/image/upload/c_fill,w_1000,q_auto:best,f_auto/v1779096302/nail_art_in_gaya_orv8cp.webp",
+    "https://res.cloudinary.com/dascytq6n/image/upload/v1779096302/nail_art_in_gaya_orv8cp.webp",
 
   thirdImage:
-    "https://res.cloudinary.com/dascytq6n/image/upload/c_fill,w_1000,q_auto:best,f_auto/v1779096302/nail_extension_course_in_gaya_wtpn2c.webp",
+    "https://res.cloudinary.com/dascytq6n/image/upload/v1779096302/nail_extension_course_in_gaya_wtpn2c.webp",
 
   thumbnail:
-    "https://res.cloudinary.com/dascytq6n/image/upload/c_fill,w_600,q_auto:best,f_auto/v1779043592/nail_art_course_in_gaya_fenoyk.webp",
+    "https://res.cloudinary.com/dascytq6n/image/upload/v1779043592/nail_art_course_in_gaya_fenoyk.webp",
 
   mainImageAlt:
    "Professional nail extension course in Gaya with gel and acrylic nail training",

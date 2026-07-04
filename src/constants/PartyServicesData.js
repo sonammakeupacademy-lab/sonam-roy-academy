@@ -4,7 +4,7 @@ export const partyServices = [
     title: "Party Makeup",
 
     image:
-      "https://res.cloudinary.com/dascytq6n/image/upload/q_auto/f_auto/v1779373576/party_makeup_in_gaya_qtusrs.webp",
+      "https://res.cloudinary.com/dascytq6n/image/upload/v1779373576/party_makeup_in_gaya_qtusrs.webp",
 
     imageAlt: "Professional Party Makeup in Gaya by Sonam Roy Makeup Academy",
 
@@ -28,7 +28,7 @@ export const partyServices = [
     title: "HD Party Makeup",
 
     image:
-      "https://res.cloudinary.com/dascytq6n/image/upload/q_auto/f_auto/v1779374276/hd_party_makeup_in_gaya_u8oekl.webp",
+      "https://res.cloudinary.com/dascytq6n/image/upload/v1779374276/hd_party_makeup_in_gaya_u8oekl.webp",
 
     imageAlt: "HD Party Makeup in Gaya with flawless camera-ready finish by Sonam Roy Makeup Academy",
 
@@ -52,7 +52,7 @@ export const partyServices = [
     title: "Ultra HD Party Makeup",
 
     image:
-      "https://res.cloudinary.com/dascytq6n/image/upload/q_auto/f_auto/v1779374276/ultra_hd_party_makeup_in_gaya_smtmw7.webp",
+      "https://res.cloudinary.com/dascytq6n/image/upload/v1779374276/ultra_hd_party_makeup_in_gaya_smtmw7.webp",
 
     imageAlt: "Ultra HD Party Makeup in Gaya with luxury skin finish by Sonam Roy Makeup Academy",
 
@@ -76,7 +76,7 @@ export const partyServices = [
     title: "Airbrush Party Makeup",
 
     image:
-      "https://res.cloudinary.com/dascytq6n/image/upload/q_auto/f_auto/v1779374837/ultra_hd_airbrush_party_makeup_in_gaya_xkyevp.webp",
+      "https://res.cloudinary.com/dascytq6n/image/upload/v1779374837/ultra_hd_airbrush_party_makeup_in_gaya_xkyevp.webp",
 
     imageAlt: "Airbrush Party Makeup in Gaya with waterproof flawless finish by Sonam Roy Makeup Academy",
 
@@ -101,7 +101,7 @@ export const partyServices = [
     title: "Ultra HD Airbrush Party Makeup",
 
     image:
-      "https://res.cloudinary.com/dascytq6n/image/upload/q_auto/f_auto/v1779374837/Airbrush_party_makeup_in_gaya_rmk4em.webp",
+      "https://res.cloudinary.com/dascytq6n/image/upload/v1779374837/Airbrush_party_makeup_in_gaya_rmk4em.webp",
 
     imageAlt: "Ultra HD Airbrush Party Makeup in Gaya by Sonam Roy Makeup Academy",
 
@@ -126,7 +126,7 @@ export const partyServices = [
     title: "Sangeet Makeup",
 
     image:
-      "https://res.cloudinary.com/dascytq6n/image/upload/q_auto/f_auto/v1780212582/sangeet_makeup_in_gaya_txbvjk.webp",
+      "https://res.cloudinary.com/dascytq6n/image/upload/v1780212582/sangeet_makeup_in_gaya_txbvjk.webp",
 
     imageAlt: "Sangeet Makeup in Gaya with glamorous long-lasting look by Sonam Roy Makeup Academy",
     
@@ -151,7 +151,7 @@ export const partyServices = [
     title: "Cocktail Party Makeup",
 
     image:
-      "https://res.cloudinary.com/dascytq6n/image/upload/q_auto/f_auto/v1780213122/Cocktail_Party_Makeup_in_gaya_ghqdw9.webp",
+      "https://res.cloudinary.com/dascytq6n/image/upload/v1780213122/Cocktail_Party_Makeup_in_gaya_ghqdw9.webp",
 
     imageAlt: "Cocktail Party Makeup in Gaya with bold glamorous look by Sonam Roy Makeup Academy",
 

@@ -3,7 +3,7 @@ export const ultraPremiumPreBridalServices = [
     title: "Ultra Premium Pre Bridal Package",
     price: "₹16,999",
     image:
-      "https://res.cloudinary.com/dascytq6n/image/upload/q_auto/f_auto/v1780302907/pre_bridal_makeup_near_me_zjyiau.webp",
+      "https://res.cloudinary.com/dascytq6n/image/upload/v1780302907/pre_bridal_makeup_near_me_zjyiau.webp",
 
     imageAlt:
       "Ultra Premium Pre Bridal Package in Gaya with O3+ Diamond Luxury Facial, full body polishing, luxury bridal skincare and complete bridal grooming at Sonam Roy Makeup Academy",

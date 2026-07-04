@@ -3,7 +3,7 @@ export const standardPreBridalServices = [
     title: "Standard Pre Bridal Package",
     price: "₹8,999",
     image:
-      "https://res.cloudinary.com/dascytq6n/image/upload/q_auto/f_auto/v1780302907/pre_bridal_makeup_in_gaya_rppma4.webp",
+      "https://res.cloudinary.com/dascytq6n/image/upload/v1780302907/pre_bridal_makeup_in_gaya_rppma4.webp",
 
     imageAlt:
     "Standard Pre Bridal Package in Gaya by Sonam Roy Makeup Academy",

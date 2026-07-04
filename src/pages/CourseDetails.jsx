@@ -1,4 +1,5 @@
 import React, { memo, useMemo } from "react";
+import CloudinaryImage from "../components/common/CloudinaryImage";
 import { useParams } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 
@@ -41,26 +42,26 @@ function OptimizedImage({
 }) {
   return (
     <div className="overflow-hidden rounded-lg border border-[#b48a45]/20 bg-white shadow-md">
-
       <div className="aspect-[5/4] bg-[#f8f0e6]">
 
-        <img
+        <CloudinaryImage
           src={src || IMAGE_FALLBACK}
           alt={alt || "Course Image"}
-          width="1000"
-          height="800"
-          loading={priority ? "eager" : "lazy"}
-          decoding="async"
+          width={1000}
+          height={800}
+          maxWidth={1200}
           sizes="(max-width:768px) 100vw, 50vw"
+          loading={priority ? "eager" : "lazy"}
+          fetchPriority={priority ? "high" : "auto"}
+          decoding="async"
           className="h-full w-full object-cover transition duration-700 hover:scale-105"
           onError={(e) => {
-             e.currentTarget.onerror = null;
-             e.currentTarget.src = IMAGE_FALLBACK;
+            e.currentTarget.onerror = null;
+            e.currentTarget.src = IMAGE_FALLBACK;
           }}
         />
 
       </div>
-
     </div>
   );
 }

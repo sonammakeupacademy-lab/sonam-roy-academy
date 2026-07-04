@@ -4,7 +4,7 @@ export const haldiMehandiServices = [
     title: "Haldi Makeup",
 
     image:
-      "https://res.cloudinary.com/dascytq6n/image/upload/q_auto/f_auto/v1779693758/Haldi_makeup_in_gaya_pofowr.webp",
+      "https://res.cloudinary.com/dascytq6n/image/upload/v1779693758/Haldi_makeup_in_gaya_pofowr.webp",
 
     imageAlt:
       "Professional Haldi Makeup in Gaya by Sonam Roy Makeup Academy",
@@ -29,7 +29,7 @@ export const haldiMehandiServices = [
     title: "Mehandi Makeup",
 
     image:
-      "https://res.cloudinary.com/dascytq6n/image/upload/q_auto/f_auto/v1779693758/Mehandi_makeup_in_gaya_wzeseb.webp",
+      "https://res.cloudinary.com/dascytq6n/image/upload/v1779693758/Mehandi_makeup_in_gaya_wzeseb.webp",
 
     imageAlt:
       "Professional Mehandi Makeup in Gaya by Sonam Roy Makeup Academy",

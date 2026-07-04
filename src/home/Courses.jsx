@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { businessPhoneLink } from "../constants/siteData";
+import CloudinaryImage from "../components/common/CloudinaryImage";
 
 const courses = [
   {
@@ -11,7 +12,7 @@ const courses = [
     cardImageAlt:
       "Basic Makeup Course in Gaya at Sonam Roy Makeup Academy",
     image:
-      "https://res.cloudinary.com/dascytq6n/image/upload/q_auto:best,f_auto,w_600/v1779043592/basic_makeup_course_in_gaya_l32yed.webp",
+      "https://res.cloudinary.com/dascytq6n/image/upload/v1779043592/basic_makeup_course_in_gaya_l32yed.webp",
   },
 
   {
@@ -22,7 +23,7 @@ const courses = [
     cardImageAlt:
       "Advanced Makeup Course in Gaya at Sonam Roy Makeup Academy",
     image:
-      "https://res.cloudinary.com/dascytq6n/image/upload/q_auto:best,f_auto,w_600/v1779043592/advance_makeup_course_in_gaya_wpmaxf.webp",
+      "https://res.cloudinary.com/dascytq6n/image/upload/v1779043592/advance_makeup_course_in_gaya_wpmaxf.webp",
   },
 
   {
@@ -33,7 +34,7 @@ const courses = [
     cardImageAlt:
       "Airbrush Makeup Course Training in Gaya",
     image:
-      "https://res.cloudinary.com/dascytq6n/image/upload/q_auto:best,f_auto,w_600/v1779043592/airbrush_makeup_course_in_gaya_onrqub.webp",
+      "https://res.cloudinary.com/dascytq6n/image/upload/v1779043592/airbrush_makeup_course_in_gaya_onrqub.webp",
   },
 
   {
@@ -44,7 +45,7 @@ const courses = [
     cardImageAlt:
       "Professional Hairstyling Course in Gaya",
     image:
-      "https://res.cloudinary.com/dascytq6n/image/upload/q_auto:best,f_auto,w_600/v1779085669/best_hairstyling_course_in_gaya_xesi9v.webp",
+      "https://res.cloudinary.com/dascytq6n/image/upload/v1779085669/best_hairstyling_course_in_gaya_xesi9v.webp",
   },
 
   {
@@ -55,7 +56,7 @@ const courses = [
     cardImageAlt:
       "Skin Beautician Course Training in Gaya",
     image:
-      "https://res.cloudinary.com/dascytq6n/image/upload/q_auto:best,f_auto,w_600/v1779043592/beautician_course_in_gaya_uqjmip.webp",
+      "https://res.cloudinary.com/dascytq6n/image/upload/v1779043592/beautician_course_in_gaya_uqjmip.webp",
   },
 
   {
@@ -66,7 +67,7 @@ const courses = [
     cardImageAlt:
       "Professional Nail Extension Course in Gaya",
     image:
-      "https://res.cloudinary.com/dascytq6n/image/upload/q_auto:best,f_auto,w_600/v1779043592/nail_art_course_in_gaya_fenoyk.webp",
+      "https://res.cloudinary.com/dascytq6n/image/upload/v1779043592/nail_art_course_in_gaya_fenoyk.webp",
   },
 ];
 
@@ -101,16 +102,17 @@ function Courses() {
 
               <div className="h-44 overflow-hidden sm:h-52 md:h-64">
 
-                <img
-                  src={course.image}
-                  alt={course.cardImageAlt}
-                  width="600"
-                  height="400"
-                  loading={index === 0 ? "eager" : "lazy"}
-                  decoding="async"
-                  sizes="(max-width:768px) 100vw, (max-width:1024px) 50vw, 33vw"
-                  className="h-full w-full object-cover object-top transition duration-500 group-hover:scale-105"
-                />
+                <CloudinaryImage
+                 src={course.image}
+                 alt={course.cardImageAlt}
+                 width={600}
+                 height={400}
+                 maxWidth={700}
+                 sizes="(max-width:768px) 100vw, (max-width:1024px) 50vw, 33vw"
+                 loading={index === 0 ? "eager" : "lazy"}
+                 decoding="async"
+                 className="h-full w-full object-cover object-top transition duration-500 group-hover:scale-105"
+               />
 
               </div>
 

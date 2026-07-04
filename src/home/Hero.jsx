@@ -3,9 +3,13 @@ import { FaWhatsapp } from "react-icons/fa6";
 import { FaPhoneAlt } from "react-icons/fa";
 import CloudinaryImage from "../components/common/CloudinaryImage";
 
-const preloadImage = (src) => {
+const preloadImage = (src, width) => {
   const img = new Image();
-  img.src = src;
+
+  img.src = src.replace(
+    "/upload/",
+    `/upload/f_auto,q_auto,c_fill,g_auto,dpr_auto,w_${width}/`
+  );
 };
 
   // =========================
@@ -77,8 +81,13 @@ const mobileSlides = [
 // Preload next images after first paint
 useEffect(() => {
   const preload = () => {
-    desktopSlides.slice(1).forEach((img) => preloadImage(img.src));
-    mobileSlides.slice(1).forEach((img) => preloadImage(img.src));
+    desktopSlides
+  .slice(1)
+  .forEach((img) => preloadImage(img.src, 1920));
+
+    mobileSlides
+  .slice(1)
+  .forEach((img) => preloadImage(img.src, 900));
   };
 
   if ("requestIdleCallback" in window) {
@@ -108,7 +117,7 @@ useEffect(() => {
   useEffect(() => {
   const timer = setTimeout(() => {
     setShowFormPopup(true);
-  }, 5000);
+  }, 15000);
 
   return () => clearTimeout(timer);
 }, []);
@@ -191,36 +200,38 @@ if (!response.ok) {
 
       <div className="absolute inset-0">
 
-        {/* Desktop Images */}
+     {/* Desktop Images */}
 
-      <CloudinaryImage
-       key={`desktop-${currentSlide}`}
-       src={desktopSlides[currentSlide].src}
-       alt={desktopSlides[currentSlide].alt}
-       width={1920}
-       height={1080}
-       sizes="100vw"
-       loading="eager"
-       fetchPriority="high"
-       decoding="sync"
-       className="absolute inset-0 hidden h-full w-full object-cover transition-opacity duration-700 md:block"
-      />
-
-
-         {/* Mobile Images */}
-
-        <CloudinaryImage
-       key={`mobile-${currentSlide}`}
-       src={mobileSlides[currentSlide].src}
-       alt={mobileSlides[currentSlide].alt}
-       width={900}
-       height={1600}
-       sizes="100vw"
-       loading="eager"
-       fetchPriority="high"
-       decoding="sync"
-       className="absolute inset-0 block h-full w-full object-cover transition-opacity duration-700 md:hidden"
+    <CloudinaryImage
+      key={`desktop-${currentSlide}`}
+      src={desktopSlides[currentSlide].src}
+      alt={desktopSlides[currentSlide].alt}
+      width={1920}
+      height={1080}
+      maxWidth={1920}
+      sizes="100vw"
+      loading="eager"
+      fetchPriority="high"
+      decoding="sync"
+      className="absolute inset-0 hidden h-full w-full object-cover transition-opacity duration-700 md:block"
     />
+
+
+     {/* Mobile Images */}
+
+    <CloudinaryImage
+      key={`mobile-${currentSlide}`}
+      src={mobileSlides[currentSlide].src}
+      alt={mobileSlides[currentSlide].alt}
+      width={900}
+      height={1600}
+      maxWidth={900}
+      sizes="100vw"
+      loading="eager"
+      fetchPriority="high"
+      decoding="sync"
+      className="absolute inset-0 block h-full w-full object-cover transition-opacity duration-700 md:hidden"
+   />
 
         {/* OVERLAY */}
         <div className="absolute inset-0 bg-black/60" />

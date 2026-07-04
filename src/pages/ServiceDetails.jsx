@@ -1,4 +1,5 @@
 import React, { useMemo, useState, useEffect } from "react";
+import CloudinaryImage from "../components/common/CloudinaryImage";
 import { useParams } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 
@@ -269,7 +270,7 @@ useEffect(() => {
     },
 
     provider: {
-      "@type": "BeautySalon",
+      "@id": "https://www.sonamroyacademy.com/#organization",
 
       name: "Sonam Roy Makeup Academy",
 
@@ -305,6 +306,68 @@ useEffect(() => {
       },
     })),
   };
+
+  const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+
+  itemListElement: [
+    {
+      "@type": "ListItem",
+      position: 1,
+      name: "Home",
+      item: "https://www.sonamroyacademy.com",
+    },
+    {
+      "@type": "ListItem",
+      position: 2,
+      name: "Services",
+      item: "https://www.sonamroyacademy.com/services",
+    },
+    {
+      "@type": "ListItem",
+      position: 3,
+      name: pageTitle,
+      item: canonicalUrl,
+    },
+  ],
+};
+
+const localBusinessSchema = {
+  "@context": "https://schema.org",
+  "@type": "BeautySalon",
+
+  "@id": "https://www.sonamroyacademy.com/#organization",
+
+  name: "Sonam Roy Makeup Academy",
+
+  url: "https://www.sonamroyacademy.com",
+
+  image: firstImage,
+
+  telephone: "+919199992695",
+
+  address: {
+    "@type": "PostalAddress",
+    streetAddress:
+      "Chowk, 2nd Floor, Balaji Market, KP Road, Near Pramod Laddu Bhandar",
+    addressLocality: "Gaya",
+    addressRegion: "Bihar",
+    postalCode: "823001",
+    addressCountry: "IN",
+  },
+
+  areaServed: {
+    "@type": "City",
+    name: "Gaya",
+  },
+
+  sameAs: [
+    "https://www.instagram.com/muasonam_roy",
+    "https://www.facebook.com/muasonamroy",
+    "https://www.youtube.com/@SonamRoyMakeupAcademy",
+  ],
+};
 
   return (
     <>
@@ -415,6 +478,14 @@ useEffect(() => {
 
         <script type="application/ld+json">
           {JSON.stringify(serviceSchema)}
+        </script>
+
+        <script type="application/ld+json">
+         {JSON.stringify(localBusinessSchema)}
+        </script>
+
+        <script type="application/ld+json">
+          {JSON.stringify(breadcrumbSchema)}
         </script>
 
         <script type="application/ld+json">
@@ -560,6 +631,36 @@ useEffect(() => {
         {/* QUICK LINKS */}
 
        <CourseQuickLinks currentSlug={slug} />
+
+       {/* WHY CHOOSE US */}
+
+<section className="px-4 py-12 md:px-5">
+  <div className="mx-auto max-w-5xl rounded-2xl border border-[#b48a45]/15 bg-white p-6 shadow-sm">
+
+    <h2 className="text-2xl font-bold text-[#111827]">
+      Why Choose Sonam Roy Makeup Academy?
+    </h2>
+
+    <p className="mt-4 text-gray-600 leading-7">
+      Sonam Roy Makeup Academy is one of the trusted destinations for
+      bridal makeup, engagement makeup, party makeup, reception makeup,
+      haldi makeup and premium pre-bridal packages in Gaya. We use
+      premium international makeup products, maintain complete hygiene,
+      and create customized looks according to your skin tone,
+      outfit and occasion.
+    </p>
+
+    <ul className="mt-6 space-y-3 text-gray-700">
+      <li>✔ HD & Airbrush Makeup</li>
+      <li>✔ Waterproof Long Lasting Makeup</li>
+      <li>✔ Premium International Products</li>
+      <li>✔ Experienced Bridal Makeup Artist</li>
+      <li>✔ Customized Makeup Look</li>
+      <li>✔ Professional Beauty Consultation</li>
+    </ul>
+
+  </div>
+</section>
 
         {/* FAQ */}
 

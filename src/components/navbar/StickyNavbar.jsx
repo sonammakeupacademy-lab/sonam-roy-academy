@@ -76,6 +76,8 @@ function StickyNavbar() {
            alt="Sonam Roy Makeup Academy Logo"
            width={48}
            height={48}
+           maxWidth={96}
+           sizes="48px"
            loading="eager"
            fetchPriority="high"
            className="h-10 w-10 rounded-full border border-[#e8d3ab] object-cover shadow sm:h-12 sm:w-12"
