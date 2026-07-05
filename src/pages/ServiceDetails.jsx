@@ -200,8 +200,18 @@ useEffect(() => {
   const firstImage =
     servicesData?.[0]?.image || FALLBACK_IMAGE;
 
-    const handlePriceSubmit = async (e) => {
+  const handlePriceSubmit = async (e) => {
   e.preventDefault();
+  if (!/^\d{10}$/.test(mobile)) {
+  alert("Please enter a valid 10-digit mobile number.");
+  return;
+}
+
+  // 10 digit mobile validation
+  if (!/^\d{10}$/.test(mobile)) {
+    alert("Please enter a valid 10-digit mobile number.");
+    return;
+  }
 
   setLoading(true);
 
@@ -403,13 +413,6 @@ const localBusinessSchema = {
           href={canonicalUrl}
         />
 
-        {/* Performance */}
-
-        <link
-          rel="preconnect"
-          href="https://res.cloudinary.com"
-        />
-
         {/* Open Graph */}
 
         <meta
@@ -541,19 +544,18 @@ const localBusinessSchema = {
                 <div className="h-full overflow-hidden rounded-xl border border-[#b48a45]/20 bg-white shadow-lg">
 
                   <div className="h-[320px] sm:h-[420px] lg:h-full bg-[#f8f0e6]">
-                     <img
-                     src={service.image}
-                     alt={service.imageAlt}
-                     className="h-full w-full object-cover object-top"
-                     width={700}
-                     height={900}
-                     loading={index === 0 ? "eager" : "lazy"}
-                     decoding="async"
-                     sizes="(max-width:768px) 100vw, 50vw"
-                     onError={(e) => {
-                     e.currentTarget.src = FALLBACK_IMAGE;
-                     }}
-                  />
+                    <CloudinaryImage
+                      src={service.image}
+                      alt={service.imageAlt}
+                      width={700}
+                      height={900}
+                      maxWidth={700}
+                      sizes="(max-width:768px) 100vw, 50vw"
+                      loading={index === 0 ? "eager" : "lazy"}
+                      fetchPriority={index === 0 ? "high" : "low"}
+                      decoding={index === 0 ? "sync" : "async"}
+                      className="h-full w-full object-cover object-top"
+                   />
              </div>
 
                 </div>
@@ -783,14 +785,16 @@ className="w-full rounded-xl border p-3"
 
 
 <input
-type="tel"
-placeholder="Mobile Number"
-required
-pattern="[6-9]{1}[0-9]{9}"
-maxLength={10}
-value={mobile}
-onChange={(e)=>setMobile(e.target.value)}
-className="w-full rounded-xl border p-3"
+  type="tel"
+  placeholder="Mobile Number"
+  required
+  pattern="\d{10}"
+  maxLength={10}
+  value={mobile}
+  onChange={(e) =>
+    setMobile(e.target.value.replace(/\D/g, "").slice(0, 10))
+  }
+  className="w-full rounded-xl border p-3"
 />
 
 

@@ -5,11 +5,12 @@ import CloudinaryImage from "../components/common/CloudinaryImage";
 
 const preloadImage = (src, width) => {
   const img = new Image();
+  img.decoding = "async";
 
   img.src = src.replace(
-    "/upload/",
-    `/upload/f_auto,q_auto,c_fill,g_auto,dpr_auto,w_${width}/`
-  );
+  "/upload/",
+  `/upload/f_avif,q_auto:good,c_fill,g_auto,dpr_auto,w_${width}/`
+);
 };
 
   // =========================
@@ -209,7 +210,7 @@ if (!response.ok) {
       width={1920}
       height={1080}
       maxWidth={1920}
-      sizes="100vw"
+      sizes="(max-width:768px) 100vw, 100vw"
       loading="eager"
       fetchPriority="high"
       decoding="sync"

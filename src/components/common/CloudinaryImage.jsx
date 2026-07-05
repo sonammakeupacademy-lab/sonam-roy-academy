@@ -22,7 +22,7 @@ function createSrcSet(url, maxWidth) {
       (w) =>
         `${url.replace(
           "/upload/",
-          `/upload/f_auto,q_auto,c_fill,g_auto,dpr_auto,w_${w}/`
+          `/upload/f_avif,q_auto:good,c_fill,g_auto,dpr_auto,w_${w}/`
         )} ${w}w`
     )
     .join(", ");
@@ -31,7 +31,7 @@ function createSrcSet(url, maxWidth) {
 function createSrc(url, maxWidth) {
   return url.replace(
     "/upload/",
-    `/upload/f_auto,q_auto,c_fill,g_auto,dpr_auto,w_${maxWidth}/`
+    `/upload/f_avif,q_auto:good,c_fill,g_auto,dpr_auto,w_${maxWidth}/`
   );
 }
 
@@ -45,26 +45,25 @@ function CloudinaryImage({
   loading = "lazy",
   fetchPriority = "auto",
   decoding = "async",
-
-  // NEW PROP
   maxWidth = 1920,
-
   ...props
 }) {
   return (
     <img
-      src={createSrc(src, maxWidth)}
-      srcSet={createSrcSet(src, maxWidth)}
-      sizes={sizes}
-      alt={alt}
-      width={width}
-      height={height}
-      loading={loading}
-      decoding={decoding}
-      fetchpriority={fetchPriority}
-      className={className}
-      {...props}
-    />
+  src={createSrc(src, maxWidth)}
+  srcSet={createSrcSet(src, maxWidth)}
+  sizes={sizes}
+  alt={alt}
+  width={width}
+  height={height}
+  loading={loading}
+  decoding={decoding}
+  {...(fetchPriority !== "auto"
+    ? { fetchpriority: fetchPriority }
+    : {})}
+  className={className}
+  {...props}
+/>
   );
 }
 

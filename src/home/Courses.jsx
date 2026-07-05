@@ -107,9 +107,10 @@ function Courses() {
                  alt={course.cardImageAlt}
                  width={600}
                  height={400}
-                 maxWidth={700}
+                 maxWidth={600}
                  sizes="(max-width:768px) 100vw, (max-width:1024px) 50vw, 33vw"
                  loading={index === 0 ? "eager" : "lazy"}
+                 fetchPriority={index === 0 ? "high" : "auto"}
                  decoding="async"
                  className="h-full w-full object-cover object-top transition duration-500 group-hover:scale-105"
                />

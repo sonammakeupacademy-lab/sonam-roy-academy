@@ -49,8 +49,11 @@ function WhyChooseUs() {
             Why Choose Sonam Roy Makeup Academy
           </p>
 
-          <h2 className="mt-2 text-base font-bold leading-snug text-[#111827] sm:text-lg">
-            Best Makeup Academy in Gaya for Professional Makeup Artist Training & Beauty Courses
+          <h2
+            id="why-choose-heading"
+            className="mt-2 text-base font-bold leading-snug text-[#111827] sm:text-lg"
+           >
+             Best Makeup Academy in Gaya for Professional Makeup Artist Training & Beauty Courses
           </h2>
 
         </div>

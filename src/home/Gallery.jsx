@@ -67,7 +67,8 @@ function Gallery() {
               height={1000}
               maxWidth={400}
               sizes="(max-width:768px) 50vw, (max-width:1024px) 33vw, 25vw"
-              loading="lazy"
+              loading={index === 0 ? "eager" : "lazy"}
+              fetchPriority={index === 0 ? "high" : "auto"}
               decoding="async"
               className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
            />

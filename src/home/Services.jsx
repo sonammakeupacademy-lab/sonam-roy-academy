@@ -128,9 +128,9 @@ function Services() {
          Our Professional Makeup Services
         </h2>
 
-        <p className="mt-3 text-xl font-bold text-[#111827] sm:text-2xl">
+        <h3 className="mt-3 text-xl font-bold text-[#111827] sm:text-2xl">
          Bridal, Party & Pre-Bridal Services in Gaya
-        </p>
+        </h3>
 
         <p className="mx-auto mt-3 max-w-2xl text-sm leading-relaxed text-gray-600 sm:text-base">
          Professional bridal makeup, engagement makeup, party makeup,
@@ -154,16 +154,17 @@ function Services() {
               <div className="h-48 overflow-hidden sm:h-56 md:h-64">
 
               <CloudinaryImage
-              src={service.image}
-              alt={service.imageAlt}
-              width={700}
-              height={525}
-              maxWidth={700}
-              loading={index === 0 ? "eager" : "lazy"}
-              decoding="async"
-              sizes="(max-width:768px) 100vw, (max-width:1280px) 50vw, 33vw"
-              className="h-full w-full object-cover object-top transition duration-500 group-hover:scale-105"
-            />
+               src={service.image}
+               alt={service.imageAlt}
+               width={700}
+               height={525}
+               maxWidth={600}
+               loading={index === 0 ? "eager" : "lazy"}
+               fetchPriority={index === 0 ? "high" : "auto"}
+               decoding="async"
+               sizes="(max-width:768px) 100vw, (max-width:1280px) 50vw, 33vw"
+               className="h-full w-full object-cover object-top transition duration-500 group-hover:scale-105"
+             />
 
             </div>
 

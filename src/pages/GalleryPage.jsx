@@ -136,7 +136,11 @@ function GalleryPage() {
 
     url: "https://www.sonamroyacademy.com/gallery",
 
-    image: allGalleryImages.map((item) => item.src),
+    image: allGalleryImages.map((item) => ({
+  "@type": "ImageObject",
+  contentUrl: item.src,
+  description: item.alt,
+})),
   };
 
   return (
@@ -252,17 +256,18 @@ function GalleryPage() {
             {allGalleryImages.map((image, index) => (
 
               <figure
-                key={index}
+                key={image.src}
                 className="group relative aspect-[4/5] overflow-hidden rounded-xl border border-[#b48a45]/15 bg-white shadow-md transition duration-300"
               >
 
-                <CloudinaryImage
+              <CloudinaryImage
                 src={image.src}
                 alt={image.alt}
                 width={800}
                 height={1000}
-                maxWidth={800}
-                loading={index < 4 ? "eager" : "lazy"}
+                maxWidth={600}
+                loading={index === 0 ? "eager" : "lazy"}
+                fetchPriority={index === 0 ? "high" : "auto"}
                 decoding="async"
                 sizes="
                 (max-width:640px) 100vw,
