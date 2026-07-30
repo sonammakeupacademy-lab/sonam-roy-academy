@@ -225,7 +225,7 @@ useEffect(() => {
   try {
 
     await fetch(
-      "https://script.google.com/macros/s/AKfycbxYjPDrXjNv4d1BbS8SQiWTbAKeC1piAl5O-UcqBwmcHlNlVJFM-ufxbm2oB5n9NUmq1w/exec",
+      "https://script.google.com/macros/s/AKfycbxPw_iJzym90I_wsqjXoT6fn4HPtbdsvi0ExcniadhyoYyRiPTOBLcoyeBgRRtMkmyq/exec",
       {
         method: "POST",
         body: JSON.stringify(formData),

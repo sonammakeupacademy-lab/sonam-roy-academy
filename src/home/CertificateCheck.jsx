@@ -21,7 +21,7 @@ function CertificateCheck() {
 
     try {
       const response = await fetch(
-        `https://sheetdb.io/api/v1/1z3khbhur48ua/search?certificate_no=${encodeURIComponent(code)}`
+        `https://sheetdb.io/api/v1/j1qgifqra3q61/search?certificate_no=${encodeURIComponent(code)}`
       );
 
       const data = await response.json();

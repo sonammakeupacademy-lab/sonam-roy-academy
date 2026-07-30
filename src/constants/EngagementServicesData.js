@@ -9,7 +9,7 @@ export const engagementServices = [
     imageAlt:
       "Professional Engagement Makeup in Gaya by Sonam Roy Makeup Academy",
 
-    price: "₹6,000",
+    price: "₹8,000",
 
     description:
       "Professional Engagement Makeup in Gaya with flawless HD finish, elegant glam look & long-lasting beauty for your special day.",
@@ -34,7 +34,7 @@ export const engagementServices = [
     imageAlt:
        "HD Engagement Makeup in Gaya by Sonam Roy Makeup Academy",
 
-    price: "₹8,000",
+    price: "₹10,000",
 
     description:
       "HD Engagement Makeup in Gaya with flawless finish, elegant glam look & long-lasting beauty for your special day.",
@@ -59,7 +59,7 @@ export const engagementServices = [
     imageAlt:
       "Ultra HD Engagement Makeup in Gaya by Sonam Roy Makeup Academy",
 
-    price: "₹10,000",
+    price: "₹12,000",
 
     description:
       "Ultra HD Engagement Makeup in Gaya with flawless skin finish, luxury glam look & long-lasting beauty for your special day.",
@@ -84,7 +84,7 @@ export const engagementServices = [
     imageAlt:
       "Airbrush Engagement Makeup in Gaya by Sonam Roy Makeup Academy",
 
-    price: "₹12,000",
+    price: "₹15,000",
 
     description:
       "Airbrush Engagement Makeup in Gaya with lightweight flawless finish, waterproof base & elegant long-lasting glam look.",
@@ -109,7 +109,7 @@ export const engagementServices = [
     imageAlt:
       "Ultra HD Airbrush Engagement Makeup in Gaya by Sonam Roy Makeup Academy",
 
-    price: "₹15,000",
+    price: "₹18,000",
 
     description:
       "Ultra HD Airbrush Engagement Makeup in Gaya with flawless waterproof glam look.",

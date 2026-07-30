@@ -23,7 +23,7 @@ const services = [
       "https://res.cloudinary.com/dascytq6n/image/upload/v1779371959/best_makeup_artist_in_gaya_d3le9p.webp",
     imageAlt:
       "Professional Engagement Makeup Services in Gaya",
-    price: "Starting from ₹6,000",
+    price: "Starting from ₹8,000",
     description:
       "Professional engagement makeup with soft glam looks, HD finish and long-lasting beauty.",
 },
