@@ -136,50 +136,47 @@ useEffect(() => {
   // =========================
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
+  e.preventDefault();
 
-    if (loading) return;
+  if (loading) return;
 
-    setLoading(true);
+  setLoading(true);
 
-    const formData = {
-      name,
-      mobile,
-      address,
-      course,
-    };
+  try {
+    const formData = new FormData();
 
-    try {
-      const response = await fetch(
-  "https://script.google.com/macros/s/AKfycbxPw_iJzym90I_wsqjXoT6fn4HPtbdsvi0ExcniadhyoYyRiPTOBLcoyeBgRRtMkmyq/exec",
-  {
-  method: "POST",
-  headers: {
-    "Content-Type": "application/json",
-  },
-  body: JSON.stringify(formData),
-  keepalive: true,
-}
-);
+    formData.append("name", name);
+    formData.append("mobile", mobile);
+    formData.append("address", address);
+    formData.append("course", course);
 
-if (!response.ok) {
-  throw new Error("Request failed");
-}
+    const response = await fetch(
+      "https://script.google.com/macros/s/AKfycbxPw_iJzym90I_wsqjXoT6fn4HPtbdsvi0ExcniadhyoYyRiPTOBLcoyeBgRRtMkmyq/exec",
+      {
+        method: "POST",
+        body: formData,
+      }
+    );
 
-      setShowPopup(true);
-      setShowFormPopup(false);
-
-      setName("");
-      setMobile("");
-      setAddress("");
-      setCourse("");
-
-    } catch (error) {
-      alert("Something went wrong ❌");
+    if (!response.ok) {
+      throw new Error("Request failed");
     }
 
-    setLoading(false);
-  };
+    setShowPopup(true);
+    setShowFormPopup(false);
+
+    setName("");
+    setMobile("");
+    setAddress("");
+    setCourse("");
+
+  } catch (error) {
+    console.error(error);
+    alert("Something went wrong ❌");
+  }
+
+  setLoading(false);
+};
 
   return (
     <section

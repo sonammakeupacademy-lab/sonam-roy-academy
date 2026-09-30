@@ -176,6 +176,10 @@ useEffect(() => {
   if (!servicePage) {
     return (
       <section className="flex min-h-screen items-center justify-center bg-[#fffdf9] px-5">
+        <Helmet>
+          <title>Service not found | Sonam Roy Makeup Academy</title>
+          <meta name="robots" content="noindex,nofollow" />
+        </Helmet>
         <div className="text-center">
           <h1 className="text-4xl font-bold text-[#111827]">
             Service Not Found
@@ -318,30 +322,24 @@ useEffect(() => {
   };
 
   const breadcrumbSchema = {
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
 
-  itemListElement: [
-    {
-      "@type": "ListItem",
-      position: 1,
-      name: "Home",
-      item: "https://www.sonamroyacademy.com",
-    },
-    {
-      "@type": "ListItem",
-      position: 2,
-      name: "Services",
-      item: "https://www.sonamroyacademy.com/services",
-    },
-    {
-      "@type": "ListItem",
-      position: 3,
-      name: pageTitle,
-      item: canonicalUrl,
-    },
-  ],
-};
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: "https://www.sonamroyacademy.com/",
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: pageTitle,
+        item: canonicalUrl,
+      },
+    ],
+  };
 
 const localBusinessSchema = {
   "@context": "https://schema.org",
@@ -511,10 +509,6 @@ const localBusinessSchema = {
 
             <p className="mx-auto mt-3 max-w-2xl text-[13px] leading-6 text-[#5b5b5b] sm:text-base">
               {shortDescription}
-            </p>
-
-            <p className="sr-only">
-              {seoKeywords}
             </p>
 
           </div>
