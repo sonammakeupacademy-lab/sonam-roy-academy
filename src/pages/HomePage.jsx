@@ -12,6 +12,7 @@ const WhyChooseUs = lazy(() => import("../home/WhyChooseUs"));
 const Gallery = lazy(() => import("../home/Gallery"));
 const SpecialServices = lazy(() => import("../home/Services"));
 const Testimonials = lazy(() => import("../home/Testimonials"));
+const BlogSection = lazy(() => import("../home/BlogSection"));
 const CertificateCheck = lazy(() => import("../home/CertificateCheck"));
 const Contact = lazy(() => import("../home/Contact"));
 const CallToAction = lazy(() => import("../home/CallToAction"));
@@ -72,6 +73,10 @@ function HomePage() {
 
 <Suspense fallback={<SectionLoader />}>
   <Testimonials />
+</Suspense>
+
+<Suspense fallback={<SectionLoader />}>
+  <BlogSection />
 </Suspense>
 
 <Suspense fallback={<SectionLoader />}>

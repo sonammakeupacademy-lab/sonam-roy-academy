@@ -421,6 +421,8 @@ export const courses = [
 
   language: "Hindi & English",
 
+  certificate: true,
+
   shortDescription:
     "Learn professional hairstyling in Gaya with bridal hairstyles, party hairstyles, hair buns, curls, braids, hair texture techniques, and salon styling training at Sonam Roy Makeup Academy.",
 
@@ -691,7 +693,7 @@ export const courses = [
     "Learn professional nail extension techniques in Gaya with gel nails, acrylic nails, nail art, manicure, nail shaping, and salon nail styling training at Sonam Roy Makeup Academy.",
 
   metaDescription:
-   "Join the best Nail Extension Course in Gaya at Sonam Roy Makeup Academy. Learn gel nails, acrylic nails, nail art, Master gel nails, acrylic nails, nail art, salon practical training, hands-on practical training, and professional certification.",
+   "Join the best Nail Extension Course in Gaya. Learn gel and acrylic nails, nail art and salon practical training with certification at Sonam Roy Makeup Academy.",
 
   fullDescription:
     "The Professional Nail Extension Course at Sonam Roy Makeup Academy in Gaya is designed for students who want to build a successful career in the nail beauty and salon industry. This professional training course covers gel nail extensions, acrylic nail extensions, nail art designing, manicure, nail shaping, nail finishing, cuticle care, polish application, and modern nail styling techniques. Students receive hands-on practical training on different nail extension methods used in salons, beauty studios, bridal services, and fashion styling industries. The course includes live practical sessions, real model practice, nail hygiene standards, client consultation, product knowledge, refill techniques, and professional finishing methods. Students learn to create stylish and durable nail looks using modern tools and trending nail art techniques. This course is ideal for beginners, aspiring nail artists, salon professionals, beauticians, and beauty enthusiasts who want to become professional nail technicians successfully.",

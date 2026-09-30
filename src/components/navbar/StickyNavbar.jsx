@@ -14,6 +14,7 @@ const navItems = [
 
   { label: "Special Services", to: "services" },
   { label: "Testimonials", to: "testimonials" },
+  { label: "Blog", to: "blog" },
   { label: "Verify", to: "verify" },
   { label: "Contact", to: "contact" },
 ];

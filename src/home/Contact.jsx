@@ -1,4 +1,5 @@
 import { memo } from "react";
+
 import {
   FaPhoneAlt,
   FaWhatsapp,
@@ -20,6 +21,10 @@ import {
   socialLinks,
   whatsappLink,
 } from "../constants/siteData";
+
+/* =========================
+   CONTACT CARDS
+========================= */
 
 const contactCards = Object.freeze([
   {
@@ -90,26 +95,49 @@ const contactCards = Object.freeze([
   },
 ]);
 
+/* =========================
+   CONTACT COMPONENT
+========================= */
+
 function Contact() {
+  /*
+   * Exact Google Maps Embed URL
+   * Provided from Google Maps for
+   * Sonam Roy Makeup Academy
+   */
+
+  const googleMapEmbedUrl =
+    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3621.9815044476895!2d85.00826007406549!3d24.79608684783291!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f32b73146257d1%3A0xe6c1b1081b73b8b0!2sSonam%20Roy%20Makeup%20Academy!5e0!3m2!1sen!2sin!4v1790671525305!5m2!1sen!2sin";
+
+  const googleMapsSearchUrl =
+    "https://www.google.com/maps/search/?api=1&query=Sonam%20Roy%20Makeup%20Academy";
+
   return (
     <section
       id="contact"
       aria-labelledby="contact-heading"
       className="relative overflow-hidden bg-gradient-to-b from-white via-[#fffdf9] to-[#fff8ef] px-4 py-12 sm:px-6 md:py-16"
     >
+      {/* =========================
+          BACKGROUND BLUR
+      ========================= */}
 
-      {/* Background Blur */}
+      <div
+        className="absolute left-0 top-0 h-40 w-40 rounded-full bg-[#f4e6d1] opacity-30 blur-3xl"
+        aria-hidden="true"
+      />
 
-      <div className="absolute left-0 top-0 h-40 w-40 rounded-full bg-[#f4e6d1] opacity-30 blur-3xl"></div>
-
-      <div className="absolute bottom-0 right-0 h-40 w-40 rounded-full bg-[#f3dfbf] opacity-30 blur-3xl"></div>
+      <div
+        className="absolute bottom-0 right-0 h-40 w-40 rounded-full bg-[#f3dfbf] opacity-30 blur-3xl"
+        aria-hidden="true"
+      />
 
       <div className="relative mx-auto max-w-7xl">
-
-        {/* Heading */}
+        {/* =========================
+            HEADING
+        ========================= */}
 
         <div className="mb-8 text-center">
-
           <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#b48a45] sm:text-sm">
             Contact Us
           </p>
@@ -122,28 +150,27 @@ function Contact() {
           </h2>
 
           <p className="mx-auto mt-3 max-w-2xl text-[13px] leading-6 text-[#666] sm:text-base">
-            Connect with Sonam Roy Makeup Academy for professional
-            makeup training, bridal makeup courses, hairstyling,
-            beautician classes, nail extension training, admissions,
-            and beauty career guidance in Gaya.
+            Connect with Sonam Roy Makeup Academy for professional makeup
+            training, bridal makeup courses, hairstyling, beautician classes,
+            nail extension training, admissions, and beauty career guidance in
+            Gaya.
           </p>
-
         </div>
 
-        {/* Main Grid */}
+        {/* =========================
+            MAIN GRID
+        ========================= */}
 
         <div className="grid gap-8 lg:grid-cols-2">
+          {/* =========================
+              LEFT CONTENT
+          ========================= */}
 
-          {/* Left Content */}
-
-          <div className="rounded-3xl border border-[#b48a45]/20 bg-white/90 p-4 sm:p-6 shadow-[0_20px_80px_rgba(0,0,0,0.06)] backdrop-blur-sm transition-all duration-500 hover:border-[#d4af37] hover:shadow-[0_0_40px_rgba(180,138,69,0.15)] md:p-10">
-
+          <div className="rounded-3xl border border-[#b48a45]/20 bg-white/90 p-4 shadow-[0_20px_80px_rgba(0,0,0,0.06)] backdrop-blur-sm transition-all duration-500 hover:border-[#d4af37] hover:shadow-[0_0_40px_rgba(180,138,69,0.15)] sm:p-6 md:p-10">
             <div className="space-y-8">
-
-              {/* Intro */}
+              {/* INTRO */}
 
               <div>
-
                 <p className="text-sm font-bold uppercase tracking-[0.35em] text-[#b48a45]">
                   Enroll Now
                 </p>
@@ -153,42 +180,47 @@ function Contact() {
                 </h3>
 
                 <p className="mt-5 text-sm leading-8 text-[#5d5d5d] sm:text-base">
-                  Get complete information about beauty courses,
-                  bridal makeup training, fees, admissions,
-                  certifications, and career opportunities.
+                  Get complete information about beauty courses, bridal makeup
+                  training, fees, admissions, certifications, and career
+                  opportunities.
                 </p>
-
               </div>
 
-              {/* Contact Cards */}
+              {/* =========================
+                  CONTACT CARDS
+              ========================= */}
 
-              <div className="grid grid-cols-3 gap-3 sm:gap-4 justify-items-center">
-
+              <div className="grid grid-cols-3 justify-items-center gap-3 sm:gap-4">
                 {contactCards.map((card) => {
                   const Icon = card.icon;
 
                   return (
                     <a
-                     key={card.title}
-                     href={card.href}
-                     target={card.target || "_self"}
-                     rel={card.target === "_blank" ? "noopener noreferrer" : undefined}
-                     aria-label={card.title}
-                     className={`group flex h-20 w-20 items-center justify-center rounded-full bg-gradient-to-r ${card.bg} transition-all duration-300 hover:-translate-y-1 ${card.shadow}`}
+                      key={card.title}
+                      href={card.href}
+                      target={card.target || "_self"}
+                      rel={
+                        card.target === "_blank"
+                          ? "noopener noreferrer"
+                          : undefined
+                      }
+                      aria-label={card.title}
+                      title={card.title}
+                      className={`group flex h-20 w-20 items-center justify-center rounded-full bg-gradient-to-r ${card.bg} transition-all duration-300 hover:-translate-y-1 ${card.shadow} sm:h-24 sm:w-24`}
                     >
-                    <Icon className="text-2xl text-white transition duration-300 group-hover:scale-110" />
-                  </a>
+                      <Icon className="text-2xl text-white transition duration-300 group-hover:scale-110 sm:text-3xl" />
+                    </a>
                   );
                 })}
-
               </div>
 
-              {/* Address */}
+              {/* =========================
+                  ADDRESS
+              ========================= */}
 
               <div className="rounded-[30px] border border-[#b48a45]/20 bg-[#fff8ef] p-6 shadow-sm">
-
                 <h3 className="flex items-center gap-2 text-lg font-bold text-[#b48a45]">
-                  <span>📍</span>
+                  <span aria-hidden="true">📍</span>
                   Academy Address
                 </h3>
 
@@ -196,22 +228,86 @@ function Contact() {
                   {businessAddressString}
                 </p>
 
+                <a
+                  href={googleMapsSearchUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-5 inline-flex items-center justify-center rounded-full bg-[#b68d40] px-5 py-2.5 text-sm font-semibold text-white transition-all duration-300 hover:bg-[#9a7625] hover:shadow-lg"
+                >
+                  📍 Open in Google Maps
+                </a>
               </div>
+            </div>
+          </div>
 
+          {/* =========================
+              GOOGLE MAP
+          ========================= */}
+
+          <div className="group overflow-hidden rounded-[36px] border border-[#b48a45]/20 bg-white shadow-[0_20px_80px_rgba(0,0,0,0.06)] transition-all duration-500 hover:border-[#d4af37] hover:shadow-[0_0_40px_rgba(180,138,69,0.15)]">
+            {/* MAP HEADER */}
+
+            <div className="border-b border-[#b48a45]/10 bg-[#fffaf3] px-5 py-4 sm:px-6">
+              <div className="flex items-center justify-between gap-3">
+                <div>
+                  <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#b48a45]">
+                    Find Us
+                  </p>
+
+                  <h3 className="mt-1 text-lg font-bold text-[#111827] sm:text-xl">
+                    Visit Our Academy
+                  </h3>
+                </div>
+
+                <span
+                  className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#b68d40] text-lg text-white shadow-md"
+                  aria-hidden="true"
+                >
+                  📍
+                </span>
+              </div>
             </div>
 
+            {/* =========================
+                GOOGLE MAP IFRAME
+            ========================= */}
+
+            <div className="relative h-[350px] w-full sm:h-[450px] lg:h-[540px]">
+              <iframe
+                title="Sonam Roy Makeup Academy Google Maps Location"
+                src={googleMapEmbedUrl}
+                className="absolute inset-0 h-full w-full border-0"
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="strict-origin-when-cross-origin"
+              />
+            </div>
+
+            {/* =========================
+                MAP FOOTER
+            ========================= */}
+
+            <div className="border-t border-[#b48a45]/10 bg-white p-5 sm:px-6">
+              <p className="text-xs font-semibold uppercase tracking-wider text-[#b48a45]">
+                Academy Location
+              </p>
+
+              <p className="mt-1 text-sm leading-6 text-[#555]">
+                {businessAddressString}
+              </p>
+
+              <a
+                href={googleMapsSearchUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-4 inline-flex items-center justify-center rounded-full bg-[#b68d40] px-5 py-2.5 text-sm font-semibold text-white transition-all duration-300 hover:bg-[#9a7625] hover:shadow-lg"
+              >
+                Open in Google Maps →
+              </a>
+            </div>
           </div>
-
-          {/* Google Map */}
-
-          <div className="overflow-hidden rounded-[36px] border border-[#b48a45]/20 bg-white shadow-[0_20px_80px_rgba(0,0,0,0.06)] transition-all duration-500 hover:border-[#d4af37] hover:shadow-[0_0_40px_rgba(180,138,69,0.15)]">
-
-          </div>
-
         </div>
-
       </div>
-
     </section>
   );
 }
